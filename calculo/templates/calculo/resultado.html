@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+<div class="conte">
+    {% if resultado is not None %}
+    <p>La {{ operacion }} de {{ num1 }} {% if operacion == 'suma' %}+{% elif operacion == 'resta' %}-{% else %}*{% endif %} {{ num2 }} = {{ resultado }}</p>
+{% else %}
+    <p>No se ha realizado ninguna operación.</p>
+{% endif %}
+</div>

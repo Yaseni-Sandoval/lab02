@@ -1,0 +1,50 @@
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    
+}
+/* Centrar el formulario */
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para los botones de radio y casillas de verificación */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el botón de enviar */
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }

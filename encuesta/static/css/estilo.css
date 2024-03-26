@@ -1,0 +1,31 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5rem;
+}
+
+/* Estilo para centrar el contenido */
+.conten {
+    text-align: justify;
+    max-width: 400px; 
+    margin: 0 auto;
+    padding: 40px 40px; 
+    background-color: #e9dede;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px; /* Tamaño de fuente base */
+    line-height: 1.5; /* Interlineado mejorado */
+}
+
+
+/* Estilos para la impresión */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .conten {
+        box-shadow: none;
+    }
+}

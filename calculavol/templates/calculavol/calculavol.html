@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/holi.css' %}">
+
+<h1>Cálculo del volumen de Cilindro</h1>
+
+<form method="post" action="{% url 'calculavol:calculavol' %}">
+    {% csrf_token %}
+    <label for="altura">Altura (en metros):</label>
+    <input type="text" name="altura" id="altura" required>
+    <br>
+    <label for="diametro">Diámetro (en metros):</label>
+    <input type="text" name="diametro" id="diametro" required>
+    <br>
+    <button type="submit">Calcular</button>
+</form>
+
+{% if volumen %}
+    <div class="resultado">
+        <p>El cilindro con altura {{ altura }} m y diámetro {{ diametro }} m </p>
+
+        <p> tiene el diametro de: {{ volumen }} m³</p>
+    </div>
+{% endif %}
